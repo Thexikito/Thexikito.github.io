@@ -133,3 +133,22 @@ form button:hover {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
     transform: scale(0.95);
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apilar los elementos verticalmente */
+    }
+
+    form {
+        grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+    }
+
+    .sidebar {
+        margin-top: 20px; /* Espaciado entre la barra lateral y el formulario */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-section, .sidebar {
+        padding: 10px; /* Reducir el padding para pantallas muy pequeñas */
+    }
+}
