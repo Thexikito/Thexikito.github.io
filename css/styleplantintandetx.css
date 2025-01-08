@@ -112,3 +112,86 @@ ul {
 ul li {
     margin: 5px 0;
 }
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column; /* Apila contenido y barra lateral */
+        gap: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .main-content {
+        flex: 1; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Separa contenido principal de la barra lateral */
+        padding: 15px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar {
+        flex: 1; /* Ocupa todo el ancho disponible */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        padding: 15px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar input[type="text"],
+    .sidebar button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .sidebar ul li {
+        margin: 5px 0;
+    }
+
+    .social-icons {
+        flex-direction: column; /* Cambia la dirección a columna */
+        gap: 10px;
+    }
+
+    .social-icons a {
+        margin: 5px 0; /* Espaciado entre los iconos */
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    h2 {
+        font-size: 18px; /* Reduce el tamaño de los títulos */
+    }
+
+    ul li {
+        margin: 3px 0;
+        font-size: 14px; /* Ajusta el tamaño del texto en listas */
+    }
+
+    footer .contenedor {
+        flex-direction: column; /* Apila las secciones del footer */
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    footer .casilla ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .h {
+        margin-bottom: 5px;
+    }
+
+    .footter {
+        text-align: center;
+        padding: 10px;
+    }
+}
