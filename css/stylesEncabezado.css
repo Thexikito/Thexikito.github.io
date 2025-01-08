@@ -1,0 +1,117 @@
+.imagen_encabezado{
+    padding: 0;
+    width: 200px;
+    margin: 0;
+}
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00417a; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.979); 
+    z-index: 1
+}
+
+
+nav ul li {
+    position: relative; 
+}
+
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efecto de transición */
+}
+
+
+nav ul li a:hover {
+    background-color: #1397db; 
+    transform: scale(1.1); 
+}
+
+
+li ul{
+    display: none; 
+    position: absolute;
+    background-color: #00417a; 
+    min-width: 160px;
+    padding: 0;
+    margin: 0;
+    top: 100%; 
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+li ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+
+li ul li a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    text-transform: none;
+}
+
+
+li ul li a:hover {
+    background-color: #1397db; 
+}
+
+
+li:hover > ul {
+    display: block; 
+}
+
+
+@media screen and (max-width: 980px) {
+    nav ul {
+        flex-direction: column; 
+    }
+
+    li {
+        width: 100%;
+    }
+
+    li ul {
+        position: relative; 
+    }
+
+    li ul li a {
+        text-align: center; 
+    }
+}
+
+.espaciobr{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+

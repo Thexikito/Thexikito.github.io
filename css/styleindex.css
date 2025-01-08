@@ -1,0 +1,136 @@
+.contenido {
+    background-color: #8be0fa; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.contenido h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50; 
+    margin: 0; 
+    flex-grow: 1; 
+    margin-left: 20%;
+}
+
+
+.btn-contactar {
+    background-color: #3498db; 
+    color: white; 
+    font-size: 16px;
+    padding: 12px 24px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    margin-right: 20%;
+}
+
+
+.btn-contactar:hover {
+    background-color: #2980b9; 
+    transform: scale(1.1); 
+}
+
+
+
+
+.servicios {
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.titulo-servicios {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch; 
+}
+
+
+.servicio {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 48%; 
+    margin: 15px 0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.servicio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.descripcion-servicio {
+    padding: 15px;
+    text-align: left;
+}
+
+.descripcion-servicio p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+
+.btn-saber-mas {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saber-mas:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-servicios {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .servicio {
+        width: 80%;
+    }
+}
+
+
+
+
+
+    
+    
+
