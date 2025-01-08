@@ -3,6 +3,8 @@
     margin: 50px auto;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 15px;
 }
 
 .form-section {
